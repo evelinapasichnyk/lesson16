@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <div class="form">
+                <div class="form__container">
+                    <div class="form__body body-form">
+                        <div class="body-form__illustration">
+                            <img class="body-form__pic" src="img/illustration.svg" alt="illustration">
+                        </div>
+                        <div class="body-form__content">
+                            <div class="body-form__text text">
+                                <h1 class="text__subtitle">Any questions?</h1>
+                                <h2 class="text__title">Drop us a line</h2>
+                            </div>
+                            <div class="body-form__section form-section">
+                                <form class="form-section__body" action="jsonplaceholder.typicode.com/posts" method="POST">
+                                    <div class="form-section__line">
+                                        <label for="first-name" class="form-section__label">First Name*</label>
+                                        <input id="first-name" class="form-section__input" type="text" required autocomplete="off" placeholder="Your first name">
+                                    </div>
+                                    <div class="form-section__line">
+                                        <label for="last-name" class="form-section__label">Last  Name*</label>
+                                        <input id="last-name" class="form-section__input" type="text" required autocomplete="off" placeholder="Your last name">
+                                    </div>
+                                    <div class="form-section__line">
+                                        <label for="mail" class="form-section__label">Email*</label>
+                                        <input id="mail" class="form-section__input" type="email" required autocomplete="off" placeholder="Your working email">
+                                    </div>
+                                    <div class="form-section__line">
+                                        <label for="tel" class="form-section__label">Phone</label>
+                                        <input id="tel" class="form-section__input" type="tel" required autocomplete="off" placeholder="Your phone number">
+                                    </div>
+                                    <div class="form-section__line--message">
+                                        <label for="textarea" class="form-section__label">Message*</label>
+                                        <textarea id="textarea" class="form-section__area" placeholder="Your message" autocomplete="off"></textarea>
+                                    </div>
+                                    <div class="form-section__block-line">
+                                        <div class="form-section__checkbox checkbox-button">
+                                            <input id="agree" class="checkbox-button__input" name="numbers" value="yes" type="checkbox">
+                                            <label for="agree" class="checkbox-button__label">I agree to receive communications from Createx Online School</label>
+                                        </div>
+                                        <div class="form-section__button button-form">
+                                            <button name="button-submit" type="submit" class="button-form__input">Send message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__blockradio">
+                        <p>Choice your education type</p>
+                        <div class="form__radio radio">
+                            <div class="radio__line">
+                                <input id="school" type="radio" value="school" name="education" class="radio__input">
+                                <label for="school" class="radio__label"><span class="radio__text">School</span></label>
+                            </div>
+                        </div>
+                        <div class="radio__form radio">
+                            <div class="radio__line">
+                                <input id="technical" type="radio" value="technical" name="education"   class="radio__input">
+                                <label for="technical" class="radio__label"><span class="radio__text">College</span></label>
+                            </div>
+                        </div>
+                        <div class="radio__form radio">
+                            <div class="radio__line">
+                                <input id="university" type="radio" value="university" name="education" class="radio__input">
+                                <label for="university" class="radio__label"> <span class="radio__text">University</span> </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
